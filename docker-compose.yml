@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  dumoserv:
+    build: .
+    container_name: dumoserv_container
+    working_dir: /etc/dumoserv/src
+    volumes:
+      - ./:/etc/dumoserv/src
+      - ./conf:/etc/dumoserv/conf
+    command: ["node", "."]
+    ports:
+      - "8080:8080"

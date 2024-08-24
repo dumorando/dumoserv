@@ -1,0 +1,6 @@
+test
+<script usenode>
+dumoserv.write('hello world!');
+dumoserv.write('<br>');
+dumoserv.write(dumoserv.req.method);
+</script>
